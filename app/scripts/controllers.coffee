@@ -9,8 +9,10 @@ angular.module('app.controllers', [])
   '$location'
   '$resource'
   '$rootScope'
+  '$routeParams'
+  '$http'
 
-($scope, $location, $resource, $rootScope) ->
+($scope, $location, $resource, $rootScope, $routeParams, $http) ->
 
   # Uses the url to determine if the selected
   # menu item should have the class active.
@@ -32,6 +34,12 @@ angular.module('app.controllers', [])
       return 'active'
     else
       return ''
+
+  $http.get('_categories.json').success (data) ->
+    $scope.categories = data
+  $scope.changeTab = (value) ->
+    console.log(value)
+    $scope.tab = value
 ])
 
 .controller('MyCtrl1', [
@@ -50,36 +58,28 @@ angular.module('app.controllers', [])
 
 .controller('TodoCtrl', [
   '$scope'
+  '$http'
+  '$routeParams'
+  '$location'
 
-($scope) ->
+($scope, $http, $routeParams, $location) ->
+  $scope.$location = $location
+  $scope.$watch('$location.path()', (path) ->
+    $scope.activeNavId = path
+  )
+  $http.get('2015.json').success (data) ->
+    $scope.stacks = data
+])
 
-  $scope.todos = [
-    text: "learn angular"
-    done: true
-  ,
-    text: "build an angular app"
-    done: false
-  ]
+.controller('sidebarCtrl', [
+  '$scope','$http'
 
-  $scope.addTodo = ->
-    $scope.todos.push
-      text: $scope.todoText
-      done: false
+($scope, $http) ->
 
-    $scope.todoText = ""
+  $http.get('_categories.json').success (data) ->
+    $scope.categories = data
 
-  $scope.remaining = ->
-    count = 0
-    angular.forEach $scope.todos, (todo) ->
-      count += (if todo.done then 0 else 1)
-
-    count
-
-  $scope.archive = ->
-    oldTodos = $scope.todos
-    $scope.todos = []
-    angular.forEach oldTodos, (todo) ->
-      $scope.todos.push todo  unless todo.done
+  $scope.test = 'trude'
 
 ])
 

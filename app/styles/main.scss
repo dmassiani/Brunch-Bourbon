@@ -40,3 +40,12 @@ body{
 	// bottom: 0;
 	min-height: 100%;
 }
+
+#stacks{
+	section{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}

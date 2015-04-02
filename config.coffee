@@ -32,6 +32,8 @@ exports.config =
     jade_angular:
       modules_folder: 'partials'
       locals: {}
-
+    assetsmanager:
+      copyTo:
+        '/' : ['app/_categories.json', 'app/2015.json']
   # Enable or disable minifying of result js / css files.
   # minify: true

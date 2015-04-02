@@ -1,16 +1,19 @@
-div(ng-app='ng-app')
-  h2 Todo
-  div(ng-controller='TodoCtrl')
-    span {{remaining()}} of {{todos.length}} remaining
-    |  [
-    a(href='', ng-click='archive()') archive
-    | ]
-    ul.unstyled
-      li(ng-repeat='todo in todos')
-        label(class='checkbox inline')
-          input(type='checkbox', ng-model='todo.done')
-          span(class='done{{todo.done}}') {{todo.text}}
-    form(class='form-inline', ng-submit='addTodo()')
-      p
-        input(type='text', ng-model='todoText', size='30', placeholder='add new todo here')
-        input.btn.btn-primary(type='submit', value='add')
+#stacks
+  div(ng-app='ng-app')
+    div(ng-controller='TodoCtrl')
+
+      section( ng-class="{active:tab==='design'}" )
+        h2 Design
+        ul.unstyled
+          li(class="stack", ng-repeat='stack in stacks.design')
+            a(href="{{stack.url}}")
+              h3 {{ stack.titre }}
+              p {{ stack.description }}
+              
+      section( ng-class="{active:tab==='ux'}" )
+        h2 UX
+        ul.unstyled
+          li(class="stack", ng-repeat='stack in stacks.ux')
+            a(href="{{stack.url}}")
+              h3 {{ stack.titre }}
+              p {{ stack.description }}
