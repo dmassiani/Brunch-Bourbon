@@ -1,0 +1,15 @@
+
+$sidebar-background-color: #f2f2f1;
+
+#sidebar{
+
+	background: $sidebar-background-color;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	width: $sidebar-size;
+	z-index: 9999998;
+
+}

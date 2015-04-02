@@ -1,0 +1,42 @@
+@import "../components/harp-bourbon/scss/bourbon";
+@import "settings/typography";
+$visual-grid: false;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.2;
+@import "../components/base/base";
+@import "../components/harp-neat/scss/neat";
+
+$sidebar-size: 250px;
+
+// composants custom
+// @import "components/_buttons";
+// @import "components/_typography";
+
+// exemple prit d'intégration : http://forest.themenum.com/mega/#/dashboard
+// exemple prit de design graphique https://dribbble.com/shots/1847266-Craigslist-Redesign/attachments/309241
+
+body{
+	background: #fff;
+	color: #444343;
+	margin: 0;
+}
+
+
+.container {
+
+}
+
+@import "components/_sidebar";
+
+#stacks{
+
+	left: $sidebar-size;
+	top: 0;
+	width: auto;
+	position: absolute;
+	overflow-y: auto;
+	overflow-x: hidden;
+	// bottom: 0;
+	min-height: 100%;
+}

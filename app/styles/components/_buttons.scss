@@ -1,0 +1,82 @@
+@mixin button($background-color, $text-color) {
+  -webkit-font-smoothing: antialiased;
+  background-color: $background-color;
+  border-radius: $base-border-radius;
+  color: $text-color;
+  display: inline-block;
+  font-size: $base-font-size * 1.2;
+  font-weight: bold;
+  line-height: 1;
+  padding: 1.4em 2.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition (all 2.0s ease);
+  
+  &:focus{outline: none;}
+
+  &:hover {
+    background-color: darken( $background-color , 10% );
+    color: $text-color;
+    @include transition-duration(.2s);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.border{
+    color: $text-color;
+    background: transparent;
+    border: 2px solid $background-color;
+    &:hover{
+      background: transparent;
+      border-color: darken( $background-color , 10% );
+    }
+  }
+
+}
+
+$message-themes: (
+  status:  (background: #d5edf8, border-color: #92cae4, color: #205791),
+  warning: (background: #fff6bf, border-color: #ffd324, color: #514721),
+  error:   (background: #fbe3e4, border-color: #fbc2c4, color: #8a1f11),
+) !default;
+
+.message {
+  border: 1px transparent solid;
+  padding: 1em .5em;
+  margin-bottom: 1em;
+  @each $type, $properties in $message-themes {
+    &.#{$type} {
+      @each $prop, $value in $properties {
+        #{$prop}: $value;
+      }
+    }
+  }
+}
+
+.button,
+button{
+	&.grey{
+		@include button( #ddd, grey );
+	}
+	&.pink{
+		@include button( pink, white );
+	}
+  &.white{
+    @include button( white, $gray );
+    &.border{
+      @include button( white, white );
+    }
+  }
+  &.pink.soft{
+    @include button( $soft-pink, white );
+    &.border{
+      @include button( $soft-pink, $soft-pink );
+    }
+  }
+	&.pink.hard{
+		@include button( $hard-pink, white );
+	}
+}

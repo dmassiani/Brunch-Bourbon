@@ -1,0 +1,24 @@
+
+// #######################################
+// Typography
+// #######################################
+
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 2em;
+	@include media($large-screen) {
+		font-size: 4em;
+	}
+}
+
+h2{
+	font-size: 2em;
+	@include media($large-screen) {
+		font-size: 2em;
+	}
+}
