@@ -1,20 +1,15 @@
-# angular-brunch-seed
-### A starter project for AngularJS using Brunch.io
+# angular-bourbon-brunch
+### A starter project for AngularJS using Brunch.io and Bourbon.io
 
-[AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
-
-#### ** MAJOR UPDATES **
-v0.4.0 Bring with it some major changes. If you're upgrading from a previous release, 
-please run `./scripts/init.sh` and remove any bower components from `vendor`. Bower
-now uses the `bower_components` directory.
+[AngularJS](http://angularjs.org) + [Brunch](http://brunch.io) + [Bourbon](http://bourbon.io)
 
 Features:
-* Coffeescript / Jade / Less / Stylus automatically compiled on save
+* Coffeescript / Jade / Sass / Stylus automatically compiled on save
 * auto-reload during development saves you from manually refreshing the page
 * Javascript / CSS minification for production
 * [karma](https://github.com/karma-runner/karma) integration for
   unit tests
-* Bootstrap integration with themes.
+* Bourbon / Neat
 * Source map support
 
 ## Alternate Versions
@@ -34,14 +29,14 @@ Features:
 
 ## How to use angular-brunch-seed
 
-* `git clone https://github.com/scotch/angular-brunch-seed.git` to clone 
+* `git clone https://github.com/dmassiani/angular-bourbon-brunch.git` to clone 
   the **angular-brunch-seed** repository
 * `cd angular-brunch-seed`
 * `./scripts/init.sh` to install node packages
 
 Or if you have **Brunch** installed run:
 
-`brunch new https://github.com/scotch/angular-brunch-seed myapp`
+`brunch new https://github.com/dmassiani/angular-bourbon-brunch.git myapp`
 
 You must also install packages using bower. Either
 
@@ -185,13 +180,6 @@ git pull origin master
         filters.js            --> custom angular filters
         services.js           --> custom angular services
 
-      styles/                 --> all custom styles. Acceptable files types inculde:
-                                  less, and stylus
-        _override.less        --> styles that should be loaded after bootstrap.
-        _variables.less       --> bootstrap variables to be used during the compilation process
-                              --> **NOTE the underscore (_). Files begining with an underscore 
-                                  will not automatically be compiled, they must be imported.
-        app.less              --> a file for importing styles.
       app.coffee              --> application definition and routes.
       index.jade              --> Index file. This will be converted to assets/index.html on save
       init.coffee             --> application bootstrap
@@ -232,6 +220,6 @@ git pull origin master
 
 ## Contributers
 
-[Complete list of code contributers](https://github.com/scotch/angular-brunch-seed/graphs/contributors)
+[Complete list of code contributers](https://github.com/dmassiani/angular-bourbon-brunch/graphs/contributors)
 
 For more information on angular please check out <http://angularjs.org>
