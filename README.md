@@ -48,6 +48,9 @@ or
 ./node_modules/.bin/bower install
 ```
 
+**sudo** brunch watch --server
+
+
 *NOTE:* Depending upon your connection and processor speed the build can take
 a substantial amount of time (3 - 15 minutes). The bower step is particularly
 slow, because it downloads the complete git history. If you think that there
