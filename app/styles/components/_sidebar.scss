@@ -15,7 +15,7 @@ $switcher-off: #6E6E80;
 
 	background: $sidebar-background-color;
 
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	top: 0;
@@ -29,7 +29,7 @@ $switcher-off: #6E6E80;
 	}
 
 	li{
-		padding: 20px 0 0 20px;
+		padding: 10px 0 0 20px;
 
 	}
 
@@ -43,7 +43,7 @@ $switcher-off: #6E6E80;
   	color: $sidebar-color;
 
 	span{
-		margin-left: 65px;
+		margin-left: 50px;
 		position: absolute;
 		top: -5px;
 	}
@@ -53,7 +53,7 @@ $switcher-off: #6E6E80;
 
     + .checkbox {
 		
-		width: 51px;
+		width: 30px;
 		background: $switch-off;
 		color: $label-off;
 
@@ -62,9 +62,10 @@ $switcher-off: #6E6E80;
       }
 
       &:after {
-		top: -5px;
-		width: 22px;
-		height: 22px;
+		top: -2px;
+		left: -2px;
+		width: 16px;
+		height: 16px;
 		background: $switcher-off;
       }
     }
@@ -81,7 +82,7 @@ $switcher-off: #6E6E80;
         }
 
         &:after {
-			left: 30px;
+			left: 18px;
 			background: $switcher-on;
         }
       }

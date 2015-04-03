@@ -1,8 +1,7 @@
-#stacks
-  h1 Curated web designer must read 
+#stacks 
   div(ng-app='ng-app')
     div(ng-controller='TodoCtrl')
-      input(ng-model="search.description")
+      input(id="search", ng-model="search.description")
       ul
         li(ng-repeat='stack in stacks.stacks | reverse | filter:search', ng-class="stack.categorie", class="stack", ng-show="selectedCategories[stack.categorie].selected")
           a(href="{{ stack.url }}")

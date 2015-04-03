@@ -35,13 +35,13 @@ angular.module('app.controllers', [])
       # console.log(localStorageService.get(value.slug), 'pour', value.slug, typeof localStorageService.get(value.slug))
 
       if typeof localStorageService.get(value.slug) == "string"
-        # console.log('cest un string')
+
         if localStorageService.get(value.slug) != 'false'
           $scope.selectedCategories[ value.slug ] = {'selected': true} 
         else 
           $scope.selectedCategories[ value.slug ] = {'selected': false}
       else
-        $scope.selectedCategories[ value.slug ] = {'selected': false}
+        $scope.selectedCategories[ value.slug ] = {'selected': true}
 
     )
 
@@ -65,7 +65,7 @@ angular.module('app.controllers', [])
   $scope.$watch('$location.path()', (path) ->
     $scope.activeNavId = path
   )
-  $http.get('2015_2.json').success (data) ->
+  $http.get('2015.json').success (data) ->
     $scope.stacks = data
 
 ])
