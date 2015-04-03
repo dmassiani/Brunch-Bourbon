@@ -32,10 +32,10 @@ angular.module('app.controllers', [])
   $http.get('_categories.json').success (data) ->
     $scope.categories = data 
     angular.forEach(data.category, (value, key) ->
-      console.log(localStorageService.get(value.slug), 'pour', value.slug, typeof localStorageService.get(value.slug))
+      # console.log(localStorageService.get(value.slug), 'pour', value.slug, typeof localStorageService.get(value.slug))
 
       if typeof localStorageService.get(value.slug) == "string"
-        console.log('cest un string')
+        # console.log('cest un string')
         if localStorageService.get(value.slug) != 'false'
           $scope.selectedCategories[ value.slug ] = {'selected': true} 
         else 
@@ -52,28 +52,6 @@ angular.module('app.controllers', [])
     $scope.selected = index
 
 
-  # $http.get('_categories.json').success (data) ->
-  #   $scope.categories = data
-
-
-  # $scope.checkboxModel =
-  #      value1 : true,
-  #      value2 : 'YES'
-
-])
-
-.controller('MyCtrl1', [
-  '$scope'
-
-($scope) ->
-  $scope.onePlusOne = 2
-])
-
-.controller('MyCtrl2', [
-  '$scope'
-
-($scope) ->
-  $scope
 ])
 
 .controller('TodoCtrl', [
@@ -118,6 +96,6 @@ angular.module('app.controllers', [])
     # console.log(myJsonString)
     # console.log(slug,$scope.selectedCategories[ slug ].selected)
     localStorageService.set(slug,$scope.selectedCategories[ slug ].selected)
-    console.log(localStorageService.get(slug))
+    # console.log(localStorageService.get(slug))
 ])
 

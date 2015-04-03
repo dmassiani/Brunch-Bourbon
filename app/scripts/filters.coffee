@@ -14,6 +14,6 @@ angular.module('app.filters', [])
 
 .filter('reverse', [
 	() ->
-	  (items) ->
-	    items.slice().reverse()
+		(items) ->
+			items.slice().reverse() if typeof items != "undefined"
 ])

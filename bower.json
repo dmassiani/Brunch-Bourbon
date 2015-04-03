@@ -2,7 +2,7 @@
   "name": "angular-brunch-seed",
   "repo": "scotch/angular-brunch-seed",
   "version": "0.3.0",
-  "main": "_public/js/app.js",
+  "main": "public/js/app.js",
   "ignore": [
     "**/.*",
     "node_modules",
