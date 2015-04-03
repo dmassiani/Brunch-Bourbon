@@ -1,0 +1,12 @@
+#stacks
+  div(ng-app='ng-app')
+    div(ng-controller='TodoCtrl')
+      input(ng-model="search.description")
+      ul
+        li(ng-repeat='stack in stacks.stacks | reverse | filter:search', ng-class="stack.categorie", class="stack", ng-show="selectedCategories[stack.categorie].selected")
+          a(href="{{ stack.url }}")
+            h6 {{ stack.categorie }}
+            h3 {{ stack.titre }}
+            p {{ stack.description }}
+            div(class="tags", ng-repeat='tag in stack.tags')
+              span(class="{{tag}}") {{tag}}

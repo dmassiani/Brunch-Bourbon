@@ -34,6 +34,6 @@ exports.config =
       locals: {}
     assetsmanager:
       copyTo:
-        '/' : ['app/_categories.json', 'app/2015.json']
+        '/' : ['app/_categories.json', 'app/2015.json', 'app/2015_2.json']
   # Enable or disable minifying of result js / css files.
   # minify: true

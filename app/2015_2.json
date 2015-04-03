@@ -1,0 +1,37 @@
+{
+  "stacks":[
+      {
+        "categorie": "design",
+        "titre": "Font Pair",
+        "long": "Helps designers pair Google Fonts together. Beautiful Google Font combinations and…",
+        "description": "Font Pair helps designers pair Google Fonts together. Beautiful Google Font combinations and pairs.",
+        "url": "http://fontpair.co/",
+        "tags": [
+          "typography", "font", "google font" 
+        ],
+        "langue": "EN"
+      },
+      {
+        "categorie": "ux",
+        "titre": "Petits Lots",
+        "long": "Les petits lots pour un graphisme Lean · Poppy Jikko · Illustration, Graphisme et Marketing Agile.",
+        "description": "L'article sur les gas­pillages de gra­phistes a mis en lumière le pro­blème du feed­back tar­dif quand les créa­tifs s…",
+        "url": "http://poppyjikko.com/petits-lots-graphisme-lean",
+        "tags": [
+          "agile", "lean method", "graphisme" 
+        ],
+        "langue": "FR"
+      },
+      {
+        "categorie": "wordpress",
+        "titre": "Le beau",
+        "long": "Le beau et l'utilisable",
+        "description": "Le beau et l'utilisable sont souvent deux notions qui sont mises en opposition quand on fait du Web, certains…",
+        "url": "http://www.24joursdeweb.fr/2014/le-beau-et-l-utilisable/",
+        "tags": [
+          "wordpress", "utilisability", "graphisme" 
+        ],
+        "langue": "FR"
+      }
+  ]
+}

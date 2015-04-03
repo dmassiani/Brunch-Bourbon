@@ -11,8 +11,9 @@ angular.module('app.controllers', [])
   '$rootScope'
   '$routeParams'
   '$http'
+  'localStorageService'
 
-($scope, $location, $resource, $rootScope, $routeParams, $http) ->
+($scope, $location, $resource, $rootScope, $routeParams, $http, localStorageService) ->
 
   # Uses the url to determine if the selected
   # menu item should have the class active.
@@ -21,25 +22,44 @@ angular.module('app.controllers', [])
     $scope.activeNavId = path || '/'
   )
 
-  # getClass compares the current url with the id.
-  # If the current url starts with the id it returns 'active'
-  # otherwise it will return '' an empty string. E.g.
-  #
-  #   # current url = '/products/1'
-  #   getClass('/products') # returns 'active'
-  #   getClass('/orders') # returns ''
-  #
-  $scope.getClass = (id) ->
-    if $scope.activeNavId.substring(0, id.length) == id
-      return 'active'
-    else
-      return ''
-
+  $scope.selected = null
+  $scope.tab = ''
+  $scope.selectedCategories = []
+  # $scope.category = {
+  #   "available": []
+  # }
+  # localStorageService.clearAll()
   $http.get('_categories.json').success (data) ->
-    $scope.categories = data
-  $scope.changeTab = (value) ->
-    console.log(value)
+    $scope.categories = data 
+    angular.forEach(data.category, (value, key) ->
+      console.log(localStorageService.get(value.slug), 'pour', value.slug, typeof localStorageService.get(value.slug))
+
+      if typeof localStorageService.get(value.slug) == "string"
+        console.log('cest un string')
+        if localStorageService.get(value.slug) != 'false'
+          $scope.selectedCategories[ value.slug ] = {'selected': true} 
+        else 
+          $scope.selectedCategories[ value.slug ] = {'selected': false}
+      else
+        $scope.selectedCategories[ value.slug ] = {'selected': false}
+
+    )
+
+    # localStorageService.set('categories','mop')
+    
+  $scope.select = (value, index) ->
     $scope.tab = value
+    $scope.selected = index
+
+
+  # $http.get('_categories.json').success (data) ->
+  #   $scope.categories = data
+
+
+  # $scope.checkboxModel =
+  #      value1 : true,
+  #      value2 : 'YES'
+
 ])
 
 .controller('MyCtrl1', [
@@ -67,19 +87,37 @@ angular.module('app.controllers', [])
   $scope.$watch('$location.path()', (path) ->
     $scope.activeNavId = path
   )
-  $http.get('2015.json').success (data) ->
+  $http.get('2015_2.json').success (data) ->
     $scope.stacks = data
+
 ])
 
 .controller('sidebarCtrl', [
-  '$scope','$http'
+  '$scope','$http', '$location', 'localStorageService'
 
-($scope, $http) ->
+($scope, $http, $location,localStorageService) ->
 
-  $http.get('_categories.json').success (data) ->
-    $scope.categories = data
 
-  $scope.test = 'trude'
 
+  $scope.isActive = (item) ->
+    if (item.path == $location.path())
+      return true
+    return false
+
+
+
+  $scope.toggleSelection = (slug) ->
+
+    # console.log($scope.selectedCategories[slug].selected)
+
+    if $scope.selectedCategories[ slug ].selected == false
+      $scope.selectedCategories[ slug ].selected = true
+    else
+      $scope.selectedCategories[ slug ].selected = false
+    # myJsonString = JSON.stringify($scope.selectedCategories)
+    # console.log(myJsonString)
+    # console.log(slug,$scope.selectedCategories[ slug ].selected)
+    localStorageService.set(slug,$scope.selectedCategories[ slug ].selected)
+    console.log(localStorageService.get(slug))
 ])
 

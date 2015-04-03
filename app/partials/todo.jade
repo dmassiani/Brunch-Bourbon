@@ -1,6 +1,6 @@
 #stacks
   div(ng-app='ng-app')
-    div(ng-controller='TodoCtrl')
+    div(ng-controller='TodoCtrl', ng-class="{active:tab===''}")
 
       section( ng-class="{active:tab==='design'}" )
         h2 Design

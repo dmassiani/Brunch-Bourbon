@@ -10,21 +10,24 @@ App = angular.module('app', [
   'app.filters'
   'app.services'
   'partials'
+  'LocalStorageModule'
 ])
 
 App.config([
   '$routeProvider'
   '$locationProvider'
+  'localStorageServiceProvider'
 
-($routeProvider, $locationProvider, config) ->
+($routeProvider, $locationProvider, localStorageServiceProvider, config) ->
 
   $routeProvider
 
-    .when('/:todo', {templateUrl: '/partials/todo.html'})
+    .when('/', {templateUrl: '/partials/stacks.html'})
 
     # Catch all
-    .otherwise({redirectTo: '/:todo'})
+    .otherwise({redirectTo: '/'})
 
   # Without server side support html5 must be disabled.
   $locationProvider.html5Mode(true)
+  localStorageServiceProvider.setPrefix('stackterest')
 ])

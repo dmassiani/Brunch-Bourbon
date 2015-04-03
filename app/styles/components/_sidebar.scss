@@ -1,5 +1,15 @@
 
-$sidebar-background-color: #f2f2f1;
+$sidebar-background-color: #424251;
+$sidebar-color: #fff;
+
+$switch-off: #4E4E5E;
+$switch-on: #00D86C;
+
+$label-on: #fff;
+$label-off: #6D6D80;
+
+$switcher-on: #fff;
+$switcher-off: #6E6E80;
 
 #sidebar{
 
@@ -11,5 +21,70 @@ $sidebar-background-color: #f2f2f1;
 	top: 0;
 	width: $sidebar-size;
 	z-index: 9999998;
+	
+	a#logo{
+		display: block;
+		padding: 20px 0;
+		color: white;
+	}
 
+	li{
+		padding: 20px 0 0 20px;
+
+	}
+
+}
+.label-switch {  
+
+	// margin-right: 10px;
+	// padding-left: 65px;
+	font-weight: 400;
+  	text-transform: uppercase;
+  	color: $sidebar-color;
+
+	span{
+		margin-left: 65px;
+		position: absolute;
+		top: -5px;
+	}
+
+  input[type="checkbox"] {
+
+
+    + .checkbox {
+		
+		width: 51px;
+		background: $switch-off;
+		color: $label-off;
+
+      &:before {
+
+      }
+
+      &:after {
+		top: -5px;
+		width: 22px;
+		height: 22px;
+		background: $switcher-off;
+      }
+    }
+
+	// quand le switch est checké
+
+    &:checked {
+      + .checkbox {
+		background: $switch-on;
+		color: $label-on;
+
+        &:before {
+
+        }
+
+        &:after {
+			left: 30px;
+			background: $switcher-on;
+        }
+      }
+    }
+  }
 }

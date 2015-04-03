@@ -11,3 +11,9 @@ angular.module('app.filters', [])
   (text) ->
     String(text).replace(/\%VERSION\%/mg, version)
 ])
+
+.filter('reverse', [
+	() ->
+	  (items) ->
+	    items.slice().reverse()
+])

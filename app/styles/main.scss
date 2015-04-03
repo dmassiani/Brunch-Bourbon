@@ -12,9 +12,12 @@ $sidebar-size: 250px;
 // composants custom
 // @import "components/_buttons";
 // @import "components/_typography";
+@import "components/_switch";
 
 // exemple prit d'intégration : http://forest.themenum.com/mega/#/dashboard
 // exemple prit de design graphique https://dribbble.com/shots/1847266-Craigslist-Redesign/attachments/309241
+
+// color https://dribbble.com/shots/1636453-e-commerce-Dashboard/attachments/255733
 
 body{
 	background: #fff;
@@ -37,15 +40,39 @@ body{
 	position: absolute;
 	overflow-y: auto;
 	overflow-x: hidden;
-	// bottom: 0;
 	min-height: 100%;
-}
-
-#stacks{
-	section{
-		display: none;
-		&.active{
+	padding: 3em;
+	color: #424251;
+	// section{
+	// 	display: none;
+	// 	&.active{
+	// 		display: block;
+	// 	}
+	// }
+	
+	li{
+		a{
+			color: #939393;
+			padding: 2em;
+			border: 1px solid #E4E4E4;
+			margin-top: -1px;
 			display: block;
+			&:hover{
+				color: #424251;
+			}
+		}
+		.tags{
+			display: inline-block;
+			margin-right: 2px;
+			span{
+				font-size: 12px;
+				padding: 1px 10px;
+				background: #333;
+				border-radius: 30px;
+				background: #E7E7E7;
+			}
+
 		}
 	}
+
 }
