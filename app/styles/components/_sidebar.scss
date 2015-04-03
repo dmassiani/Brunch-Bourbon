@@ -45,7 +45,7 @@ $switcher-off: #6E6E80;
 	span{
 		margin-left: 50px;
 		position: absolute;
-		top: -5px;
+		top: -8px;
 	}
 
   input[type="checkbox"] {
@@ -56,13 +56,14 @@ $switcher-off: #6E6E80;
 		width: 30px;
 		background: $switch-off;
 		color: $label-off;
+		height: 6px;
 
       &:before {
 
       }
 
       &:after {
-		top: -2px;
+		top: -5px;
 		left: -2px;
 		width: 16px;
 		height: 16px;

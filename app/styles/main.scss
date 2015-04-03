@@ -20,7 +20,7 @@ $sidebar-size: 250px;
 // color https://dribbble.com/shots/1636453-e-commerce-Dashboard/attachments/255733
 
 body{
-	background: #fff;
+	background: #F4F4F4;
 	color: #444343;
 	margin: 0;
 }
@@ -61,6 +61,7 @@ body{
 			border: 1px solid #E4E4E4;
 			margin-top: -1px;
 			display: block;
+			background: white;
 			&:hover{
 				color: #424251;
 			}
@@ -75,7 +76,12 @@ body{
 				border-radius: 30px;
 				background: #E7E7E7;
 			}
-
+			&.parent{
+				span{
+					background: #00D86C;
+					color: white;
+				}					
+			}
 		}
 	}
 
