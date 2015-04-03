@@ -1,6 +1,8 @@
 div(id="sidebar", ng-controller='sidebarCtrl')
 
-	a#logo Stackterest - curated trending links
+	header
+		a#logo Stackterest
+		h1 curated trending links for web designers
 
 	ul.unstyled
 		li(ng-repeat="cat in categories.category | orderBy:'slug'", ng-class="{active: isActive(cat.slug)}")

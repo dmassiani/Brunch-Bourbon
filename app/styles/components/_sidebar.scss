@@ -1,17 +1,41 @@
 
-$sidebar-background-color: #424251;
+// $sidebar-background-color: #909093;
+// $sidebar-background-color: #D1D1D2;
+$sidebar-background-color: #EFEFEF;
 $sidebar-color: #fff;
 
-$switch-off: #4E4E5E;
-$switch-on: #00D86C;
+$switch-off: #CDCDCD;
+$switch-on: #4929DB;
 
-$label-on: #fff;
-$label-off: #6D6D80;
+$label-on: #575769;
+$label-off: #A0A0A9;
 
 $switcher-on: #fff;
-$switcher-off: #6E6E80;
+$switcher-off: #B0B0B8;
 
 #sidebar{
+
+	header{
+	  background-color: #4929DB;
+	  left: 0;
+	  position: fixed;
+	  right: 0;
+	  top: 0;
+	  z-index: 10000000;
+		a#logo{
+			display: block;
+			padding: 20px 0;
+			color: white;
+		}
+		h1{
+			color: white;
+			font-size: 16px;
+			font-weight: 100;
+			position: absolute;
+			right: 20px;
+			top:20px;	
+		}
+	}
 
 	background: $sidebar-background-color;
 
@@ -21,12 +45,8 @@ $switcher-off: #6E6E80;
 	top: 0;
 	width: $sidebar-size;
 	z-index: 9999998;
+	padding-top: $header-height;
 	
-	a#logo{
-		display: block;
-		padding: 20px 0;
-		color: white;
-	}
 
 	li{
 		padding: 10px 0 0 20px;
@@ -64,6 +84,7 @@ $switcher-off: #6E6E80;
 
       &:after {
 		top: -5px;
+
 		left: -2px;
 		width: 16px;
 		height: 16px;
