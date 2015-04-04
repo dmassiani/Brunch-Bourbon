@@ -1,40 +1,45 @@
 
 // $sidebar-background-color: #909093;
 // $sidebar-background-color: #D1D1D2;
-$sidebar-background-color: #EFEFEF;
+$sidebar-background-color: #373737;
 $sidebar-color: #fff;
 
 $switch-off: #CDCDCD;
 $switch-on: #4929DB;
 
-$label-on: #575769;
-$label-off: #A0A0A9;
+$label-on: #939393;
+$label-off: #595959;
 
 $switcher-on: #fff;
 $switcher-off: #B0B0B8;
 
+
 #sidebar{
 
 	header{
-	  background-color: #4929DB;
-	  left: 0;
-	  position: fixed;
-	  right: 0;
-	  top: 0;
+	  background-color: #29DBA5;
+	  // left: 0;
+	  // position: fixed;
+	  // right: 0;
+	  // top: 0;
 	  z-index: 10000000;
 		a#logo{
 			display: block;
 			padding: 20px 0;
-			color: white;
+			color: #296B57;
+			font-weight: 900;
+			text-transform: uppercase;
+			font-size: 1.4em;
+			padding-left: 20px;
 		}
-		h1{
-			color: white;
-			font-size: 16px;
-			font-weight: 100;
-			position: absolute;
-			right: 20px;
-			top:20px;	
-		}
+	}
+	h1{
+		color: #767676;
+		font-size: 1.1em;
+		font-weight: 100;
+		position: absolute;
+		left: 20px;
+		bottom:20px;	
 	}
 
 	background: $sidebar-background-color;
@@ -45,9 +50,11 @@ $switcher-off: #B0B0B8;
 	top: 0;
 	width: $sidebar-size;
 	z-index: 9999998;
-	padding-top: $header-height;
+	// padding-top: $header-height;
 	
-
+	ul{
+		padding-top: 40px;
+	}
 	li{
 		padding: 10px 0 0 20px;
 
@@ -78,6 +85,7 @@ $switcher-off: #B0B0B8;
 		color: $label-off;
 		height: 6px;
 
+
       &:before {
 
       }
@@ -98,6 +106,41 @@ $switcher-off: #B0B0B8;
       + .checkbox {
 		background: $switch-on;
 		color: $label-on;
+
+		// colors
+		&.app{
+			background: $color-;
+		}
+		&.design{
+			background: $color--;
+		}
+		&.dev{
+			background: $color---;
+		}
+		&.frontend{
+			background: $color----;
+		}
+		&.marketing{
+			background: $color-----;
+		}
+		&.procrastination{
+			background: $color------;
+		}
+		&.resources{
+			background: $color-------;
+		}
+		&.seo{
+			background: $color--------;
+		}
+		&.ui{
+			background: $color---------;
+		}
+		&.ux{
+			background: $color----------;
+		}
+		&.wordpress{
+			background: $color-----------;
+		}
 
         &:before {
 

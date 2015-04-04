@@ -2,12 +2,13 @@ div(id="sidebar", ng-controller='sidebarCtrl')
 
 	header
 		a#logo Stackterest
-		h1 curated trending links for web designers
 
 	ul.unstyled
 		li(ng-repeat="cat in categories.category | orderBy:'slug'", ng-class="{active: isActive(cat.slug)}")
 			//a(ng-href='/{{cat.slug}}', ng-click="select(cat.slug, $index)", ng-class="{selected: $index == selected}") 
 			label(class="label-switch")
 				input(type="checkbox", ng-checked="selectedCategories[cat.slug].selected", ng-click="toggleSelection(cat.slug)")
-				div(class="checkbox")
+				div(class="checkbox {{cat.slug}}")
 					span {{cat.titre}}
+	
+	h1 curated trending links for web designers

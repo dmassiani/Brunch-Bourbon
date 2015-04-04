@@ -10,6 +10,20 @@ $visual-grid-opacity: 0.2;
 $sidebar-size: 300px;
 $header-height: 90px;
 
+// https://dribbble.com/shots/1186718-Flattastic-Pro-Color-Palette/attachments/156469
+$color-: #ED5565;
+$color--: #FC6E51;
+$color---: #FFCE54;
+$color----: #A0D468;
+$color-----: #48CFAD;
+$color------: #4FC1E9;
+$color-------: #5D9CEC;
+$color--------: #AC92EC;
+$color---------: #EC87C0;
+$color----------: #F5F7FA;
+$color-----------: #CCD1D9;
+$color------------: #656D78;
+
 // composants custom
 // @import "components/_buttons";
 // @import "components/_typography";
@@ -28,7 +42,7 @@ body{
 
 #search{
 	border: none;
-	border-bottom: 1px solid #4929DB;
+	border-bottom: 1px solid #E2E2E2;
 	width: 100%;
 	margin-bottom: 10px;
 	margin-top: -20px;
@@ -36,7 +50,7 @@ body{
 	&:focus{
 		border: none;
 		outline: none;
-		border-bottom: 3px solid #4929DB;
+		border-bottom: 1px solid #4929DB;
 	}
 }
 
@@ -54,16 +68,16 @@ body{
 	min-height: 100%;
 	padding: 2em;
 	color: #424251;
-	padding-top: $header-height;
+	padding-top: 60px;
 
 	
 	li.stack{
-		width:24%;
+		width:340px;
 		float: left;
 		margin-right: 1%;
 		margin-bottom: 30px;
 
-		height: 210px;
+		height: 350px;
 		padding: 2em;
 		margin-top: -1px;
 		display: block;
@@ -74,7 +88,7 @@ body{
 			color: #424251;
 		}
 		a{
-			color: #939393;
+			color: #646464;
 		}
 		.tags{
 			display: inline-block;
@@ -90,7 +104,45 @@ body{
 				span{
 					background: #4929DB;
 					color: white;
-				}					
+					// padding: 0 20px;
+					// colors
+					&.app{
+						background: $color-;
+					}
+					&.design{
+						background: $color--;
+					}
+					&.dev{
+						background: $color---;
+						color: #B08A2D;
+					}
+					&.frontend{
+						background: $color----;
+					}
+					&.marketing{
+						background: $color-----;
+					}
+					&.procrastination{
+						background: $color------;
+					}
+					&.resources{
+						background: $color-------;
+					}
+					&.seo{
+						background: $color--------;
+					}
+					&.ui{
+						background: $color---------;
+					}
+					&.ux{
+						background: $color----------;
+						color: #8C8C8C;
+					}
+					&.wordpress{
+						background: $color-----------;
+						color: #494949
+					}				
+				}	
 			}
 		}
 		header{

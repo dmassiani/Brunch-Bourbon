@@ -12,84 +12,62 @@
         "langue": "EN"
       },
       {
-        "categorie": "ux",
+        "categorie": "design",
         "titre": "Petits Lots",
         "long": "Les petits lots pour un graphisme Lean · Poppy Jikko · Illustration, Graphisme et Marketing Agile.",
         "description": "L'article sur les gas­pillages de gra­phistes a mis en lumière le pro­blème du feed­back tar­dif quand les créa­tifs s…",
         "url": "http://poppyjikko.com/petits-lots-graphisme-lean",
         "tags": [
           "agile", "lean method", "graphisme" 
-        ],
-        "langue": "FR"
-      },
-      {
-        "categorie": "wordpress",
-        "titre": "Le beau",
-        "long": "Le beau et l'utilisable",
-        "description": "Le beau et l'utilisable sont souvent deux notions qui sont mises en opposition quand on fait du Web, certains…",
-        "url": "http://www.24joursdeweb.fr/2014/le-beau-et-l-utilisable/",
-        "tags": [
-          "wordpress", "utilisability", "graphisme" 
         ],
         "langue": "FR"
       },
       {
         "categorie": "design",
-        "titre": "Font Pair",
-        "long": "Helps designers pair Google Fonts together. Beautiful Google Font combinations and…",
-        "description": "Font Pair helps designers pair Google Fonts together. Beautiful Google Font combinations and pairs.",
-        "url": "http://fontpair.co/",
+        "titre": "You don't need to code",
+        "long": "Photoshop power tools",
+        "description": "You don't need to code. Creating a custom Photoshop panel used to be a complex task. Not anymore. With the Scripts…",
+        "url": "http://pspowertools.com/",
         "tags": [
-          "typography", "font", "google font" 
+          "photoshop", "plugin", "graphisme" 
         ],
         "langue": "EN"
-      },
-      {
-        "categorie": "ux",
-        "titre": "Petits Lots",
-        "long": "Les petits lots pour un graphisme Lean · Poppy Jikko · Illustration, Graphisme et Marketing Agile.",
-        "description": "L'article sur les gas­pillages de gra­phistes a mis en lumière le pro­blème du feed­back tar­dif quand les créa­tifs s…",
-        "url": "http://poppyjikko.com/petits-lots-graphisme-lean",
-        "tags": [
-          "agile", "lean method", "graphisme" 
-        ],
-        "langue": "FR"
-      },
-      {
-        "categorie": "wordpress",
-        "titre": "Le beau",
-        "long": "Le beau et l'utilisable",
-        "description": "Le beau et l'utilisable sont souvent deux notions qui sont mises en opposition quand on fait du Web, certains…",
-        "url": "http://www.24joursdeweb.fr/2014/le-beau-et-l-utilisable/",
-        "tags": [
-          "wordpress", "utilisability", "graphisme" 
-        ],
-        "langue": "FR"
       },
       {
         "categorie": "design",
-        "titre": "Font Pair",
-        "long": "Helps designers pair Google Fonts together. Beautiful Google Font combinations and…",
-        "description": "Font Pair helps designers pair Google Fonts together. Beautiful Google Font combinations and pairs.",
-        "url": "http://fontpair.co/",
+        "titre": "The state of Web type",
+        "long": "Typography has a long and rich history",
+        "description": "Typography has a long and rich history, but much has been lost in the transition to the web. While browser support for…",
+        "url": "https://dev.opera.com/articles/state-of-web-type/",
         "tags": [
-          "typography", "font", "google font" 
+          "typography", "font", "typo" 
         ],
         "langue": "EN"
       },
       {
-        "categorie": "ux",
-        "titre": "Petits Lots",
-        "long": "Les petits lots pour un graphisme Lean · Poppy Jikko · Illustration, Graphisme et Marketing Agile.",
-        "description": "L'article sur les gas­pillages de gra­phistes a mis en lumière le pro­blème du feed­back tar­dif quand les créa­tifs s…",
-        "url": "http://poppyjikko.com/petits-lots-graphisme-lean",
+        "categorie": "app",
+        "titre": "Jibber",
+        "long": "The most powerful text generator for OSX",
+        "description": "Super fast, incredibly lightweight and extremely powerful. Jibber packs all your text generator needs in a simple Mac…",
+        "url": "http://jibberapp.co/",
         "tags": [
-          "agile", "lean method", "graphisme" 
+          "lorem ipsum", "photoshop", "sketchapp" 
+        ],
+        "langue": "EN"
+      },
+      {
+        "categorie": "ui",
+        "titre": "Interfaces tactiles et personnes agées",
+        "long": "Lutin Userlab",
+        "description": "Vendredi 11 Juin 2010 Nathalie Kosciusko-Morizet, secrétaire d'État chargée de la Prospective et du Développement de l…",
+        "url": "http://www.lutin-userlab.fr/site/projets/detail.php?id=25",
+        "tags": [
+          "tactile" 
         ],
         "langue": "FR"
       },
       {
-        "categorie": "wordpress",
+        "categorie": "ux",
         "titre": "Le beau",
         "long": "Le beau et l'utilisable",
         "description": "Le beau et l'utilisable sont souvent deux notions qui sont mises en opposition quand on fait du Web, certains…",
@@ -100,37 +78,37 @@
         "langue": "FR"
       },
       {
-        "categorie": "design",
-        "titre": "Font Pair",
-        "long": "Helps designers pair Google Fonts together. Beautiful Google Font combinations and…",
-        "description": "Font Pair helps designers pair Google Fonts together. Beautiful Google Font combinations and pairs.",
-        "url": "http://fontpair.co/",
+        "categorie": "ux",
+        "titre": "UX Project Checklist",
+        "long": "UX Project Checklist",
+        "description": "Start your next UX project with this checklist and don't forget about anything!",
+        "url": "http://uxchecklist.github.io/",
         "tags": [
-          "typography", "font", "google font" 
+          "checklist", "utilisability" 
         ],
         "langue": "EN"
       },
       {
         "categorie": "ux",
-        "titre": "Petits Lots",
-        "long": "Les petits lots pour un graphisme Lean · Poppy Jikko · Illustration, Graphisme et Marketing Agile.",
-        "description": "L'article sur les gas­pillages de gra­phistes a mis en lumière le pro­blème du feed­back tar­dif quand les créa­tifs s…",
-        "url": "http://poppyjikko.com/petits-lots-graphisme-lean",
+        "titre": "Tri par cartes",
+        "long": "Tri par cartes : l'architecture de l'information construite par les utilisateurs",
+        "description": "L'architecture de l'information est une problématique essentielle lorsque l'on débute la conception ou la refonte d'un…",
+        "url": "http://www.ergonomie-interface.com/methodes-process-techniques/tri-par-cartes-une-architecture-de-linformation-construite-par-les-utilisateurs/",
         "tags": [
-          "agile", "lean method", "graphisme" 
+          "content", "information" 
         ],
         "langue": "FR"
       },
       {
-        "categorie": "wordpress",
-        "titre": "Le beau",
-        "long": "Le beau et l'utilisable",
-        "description": "Le beau et l'utilisable sont souvent deux notions qui sont mises en opposition quand on fait du Web, certains…",
-        "url": "http://www.24joursdeweb.fr/2014/le-beau-et-l-utilisable/",
+        "categorie": "ux",
+        "titre": "The UX reader",
+        "long": "The UX Reader | MailChimp - MailChimp UX",
+        "description": "Thanks to everyone who bought The UX Reader to help us contribute to the non-profit, RailsBridge. Now, we're making it…",
+        "url": "http://theuxreader.com/",
         "tags": [
-          "wordpress", "utilisability", "graphisme" 
+          "mailchimp" 
         ],
-        "langue": "FR"
+        "langue": "EN"
       }
   ]
 }

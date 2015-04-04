@@ -5,7 +5,7 @@
       ul
         li(ng-repeat='stack in stacks.stacks | reverse | filter:search', ng-class="stack.categorie", class="stack", ng-show="selectedCategories[stack.categorie].selected")
           h3
-            a(href="{{ stack.url }}") {{ stack.titre }}
+            a(href="{{ stack.url }}") {{ stack.long }}
           p {{ stack.description }}
           div(class="tags parent")
             span(class="{{ stack.categorie }}") {{ stack.categorie }}
