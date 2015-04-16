@@ -14,9 +14,10 @@ Features:
 
 ## How to use Brunch au Bourbon
 
-Preferred method if you have **Brunch** installed run :
+Prefered method if you have **Brunch** installed run :
 
 `brunch new git clone https://github.com/dmassiani/Brunch-Bourbon.git myapp`
+
 You must also install packages using bower. Either
 
 Or if you have not **Brunch** installed run:
@@ -25,6 +26,8 @@ Or if you have not **Brunch** installed run:
   the **brunch-bourbon** repository
 * `cd brunch-bourbon`
 * `./scripts/init.sh` to install node packages
+
+But I'm sur you have it
 
 ```
 bower install
@@ -74,14 +77,15 @@ See [Brunch Commands](https://github.com/brunch/brunch/blob/stable/docs/commands
 
 ### Using Bower
 
-Outside dev :
+Outside watch :
 
 To add Bower component use **bower install (component) --save**
 To remove Bower component use **bower uninstall (component) --save**
 
-Inside dev :
+Inside watch :
 
 To add or update dependencies, modify the `component.json` file
+
 and run `bower install`. The component will be added to the `vendor` directory.
 
 ### Common issues
