@@ -1,12 +1,12 @@
 {
   "author": "David Massiani",
-  "name": "brunch-bourbon-jade",
+  "name": "brunch-bourbon",
   "description": "Simply brunch package with Bourbon, Jade, Coffeescript.",
   "version": "0.0.1",
-  "homepage": "",
+  "homepage": "https://github.com/dmassiani/Brunch-Bourbon",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/dmassiani/Brunch-Bourbon.git"
   },
   "scripts": {
     "start": "node_modules/.bin/brunch watch --server"

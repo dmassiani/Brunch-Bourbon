@@ -1,6 +1,6 @@
 {
-  "name": "angular-brunch-seed",
-  "repo": "scotch/angular-brunch-seed",
+  "name": "brunch-bourbon",
+  "repo": "dmassiani/Brunch-Bourbon",
   "version": "0.3.0",
   "main": "public/js/app.js",
   "ignore": [

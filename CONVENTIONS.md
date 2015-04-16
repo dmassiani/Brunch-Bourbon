@@ -1,5 +1,5 @@
 ## CONVENTIONS
-### *Coding best practices for angular-brunch-seed code.*
+### *Coding best practices for brunch-bourbon code.*
 
 ***
 
