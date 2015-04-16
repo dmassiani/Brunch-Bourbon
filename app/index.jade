@@ -6,7 +6,7 @@ html(lang='en', ng-app='app')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='')
     meta(name='author', content='')
-    title(ng-bind-template='{{pageTitle}}')
+    title Brunch + Bourbon, Neat, Bitters, Normalize, FlexboxGrid + Jade + Coffeescript = Powerfull
     link(rel='stylesheet', href='/css/app.css')
     //-script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
     //if lte IE 7
@@ -19,8 +19,8 @@ html(lang='en', ng-app='app')
         enabled: true
       };
     script(src='/js/vendor.js')
-    script(src='/js/partials.js')
     script(src='/js/app.js')
-    body(ng-controller='AppCtrl')
-      div.container(ng-include="'/partials/nav.html'")
-      div(ng-view)
+    body
+      include ./partials/nav
+      .container
+        

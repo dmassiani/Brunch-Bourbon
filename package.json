@@ -1,7 +1,7 @@
 {
-  "author": "Your Name",
-  "name": "package-name",
-  "description": "Package description",
+  "author": "David Massiani",
+  "name": "brunch-bourbon-jade",
+  "description": "Simply brunch package with Bourbon, Jade, Coffeescript.",
   "version": "0.0.1",
   "homepage": "",
   "repository": {
@@ -9,8 +9,7 @@
     "url": ""
   },
   "scripts": {
-    "start": "node_modules/.bin/brunch watch --server",
-    "test": "node_modules/.bin/karma start test/karma.conf.js"
+    "start": "node_modules/.bin/brunch watch --server"
   },
   "dependencies": {
     "assetsmanager-brunch": "^1.8.1",
@@ -24,9 +23,6 @@
     "jade": "~0.33",
     "jade-angularjs-brunch": "~0.0.5",
     "javascript-brunch": ">= 1.0 < 1.8",
-    "karma": "~0.12.31",
-    "karma-coffee-preprocessor": "~0.2.1",
-    "karma-ng-scenario": "~0.1.0",
     "sass-brunch": "~1.8.8",
     "stylus-brunch": ">= 1.0 < 1.8",
     "uglify-js-brunch": ">= 1.0 < 1.8"

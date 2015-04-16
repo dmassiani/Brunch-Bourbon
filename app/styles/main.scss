@@ -1,14 +1,17 @@
-@import "../components/harp-bourbon/scss/bourbon";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "settings/typography";
 $visual-grid: false;
 $visual-grid-color: red;
 $visual-grid-index: front;
 $visual-grid-opacity: 0.2;
-@import "../components/base/base";
-@import "../components/harp-neat/scss/neat";
+@import "../../bower_components/bitters/app/assets/stylesheets/base";
+@import "../../bower_components/neat/app/assets/stylesheets/neat";
 
-$sidebar-size: 300px;
-$header-height: 90px;
+// Change the grid settings
+$max-width: em(1200, 12);
+ 
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 3);
 
 // https://dribbble.com/shots/1186718-Flattastic-Pro-Color-Palette/attachments/156469
 $color-: #ED5565;
@@ -24,137 +27,22 @@ $color----------: #F5F7FA;
 $color-----------: #CCD1D9;
 $color------------: #656D78;
 
+//flexbox grid
+// Note : neat from thoughtbot is ready for flexbox see it : http://refills.bourbon.io/ section flexbox
+// Using flexboxgrid for bootstrap compatibility
+@import "../../bower_components/flexboxgrid/dist/flexboxgrid.css";
+
 // composants custom
 // @import "components/_buttons";
 // @import "components/_typography";
-@import "components/_switch";
+// @import "components/_switch";
+@import "components/_header-nav";
 
-// exemple prit d'intégration : http://forest.themenum.com/mega/#/dashboard
-// exemple prit de design graphique https://dribbble.com/shots/1847266-Craigslist-Redesign/attachments/309241
-
-// color https://dribbble.com/shots/1636453-e-commerce-Dashboard/attachments/255733
 
 body{
 	background: #fff;
-	color: #444343;
-	margin: 0;
 }
 
-#search{
-	border: none;
-	border-bottom: 1px solid #E2E2E2;
-	width: 100%;
-	margin-bottom: 10px;
-	margin-top: -20px;
-	height: 50px;
-	&:focus{
-		border: none;
-		outline: none;
-		border-bottom: 1px solid #4929DB;
-	}
-}
-
-@import "components/_sidebar";
-
-#stacks{
-
-	left: $sidebar-size;
-	right: 0;
-	top: 0;
-	width: auto;
-	position: absolute;
-	overflow-y: auto;
-	overflow-x: hidden;
-	min-height: 100%;
-	padding: 2em;
-	color: #424251;
-	padding-top: 60px;
-
-	
-	li.stack{
-		width:340px;
-		float: left;
-		margin-right: 1%;
-		margin-bottom: 30px;
-
-		height: 350px;
-		padding: 2em;
-		margin-top: -1px;
-		display: block;
-		background: white;
-		color: #939393;
-		position: relative;
-		&:hover{
-			color: #424251;
-		}
-		a{
-			color: #646464;
-		}
-		.tags{
-			display: inline-block;
-			margin-right: 2px;
-			span{
-				font-size: 12px;
-				padding: 1px 10px;
-				background: #333;
-				border-radius: 30px;
-				background: #E7E7E7;
-			}
-			&.parent{
-				span{
-					background: #4929DB;
-					color: white;
-					// padding: 0 20px;
-					// colors
-					&.app{
-						background: $color-;
-					}
-					&.design{
-						background: $color--;
-					}
-					&.dev{
-						background: $color---;
-						color: #B08A2D;
-					}
-					&.frontend{
-						background: $color----;
-					}
-					&.marketing{
-						background: $color-----;
-					}
-					&.procrastination{
-						background: $color------;
-					}
-					&.resources{
-						background: $color-------;
-					}
-					&.seo{
-						background: $color--------;
-					}
-					&.ui{
-						background: $color---------;
-					}
-					&.ux{
-						background: $color----------;
-						color: #8C8C8C;
-					}
-					&.wordpress{
-						background: $color-----------;
-						color: #494949
-					}				
-				}	
-			}
-		}
-		header{
-			// // position: relative;
-			// position: absolute;
-			// left: 30px;
-			// bottom: 0;
-			img{
-				max-width: 40px;
-				border-radius: 100px;
-			}
-		}
-	}
-
+.container{
+	@include outer-container;
 }
