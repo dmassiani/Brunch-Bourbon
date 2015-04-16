@@ -14,11 +14,11 @@ Features:
 
 ## BUG
 
-Actually, Neat bower component have a bug with her .bower.json files
+Actually, Bitters bower component have a bug with her .bower.json files
 
 **bower_components/bitters/.bower.json" must have `main` property. See https://github.com/paulmillr/read-components#README**
 
-Fix this with add **"main": "app/assets/stylesheets/_neat.scss",** to .bower.json
+Fix this with add **"main": "app/assets/stylesheets/_base.scss",",** to .bower.json
 
 ## How to use Brunch au Bourbon
 
