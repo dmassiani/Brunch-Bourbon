@@ -5,7 +5,7 @@
 
 Features:
 * Coffeescript / Jade / Sass / Stylus automatically compiled on save
-* auto-reload during development saves you from manually refreshing the page
+* BrowserSync
 * Javascript / CSS minification for production
 * Bourbon / Neat
 * Source map support

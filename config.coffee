@@ -1,7 +1,7 @@
 exports.config =
   # See docs at https://github.com/brunch/brunch/blob/stable/docs/config.md.
   conventions:
-    assets:  /^app\/assets\//
+    assets:  /^app\/public\//
     ignored: /^(bower_components\/bootstrap-less(-themes)?|app\/styles\/overrides|(.*?\/)?[_]\w*)/
   modules:
     definition: false
@@ -11,26 +11,22 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'js/app.js': /^app/
-        'js/vendor.js': /^(bower_components|vendor)/
+        'assets/js/app.js': /^app/
+        'assets/js/vendor.js': /^(bower_components|vendor)/
 
     stylesheets:
       joinTo:
-        'css/app.css': /^(app|vendor|bower_components)/
-      order:
-        before: [
-          'app/styles/app.less'
-        ]
+        'assets/css/app.css': /^(app|vendor|bower_components)/
 
     templates:
       joinTo:
-        'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
+        'assets/js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
 
   plugins:
     jade:
       pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
-    jade_angular:
-      modules_folder: 'partials'
-      locals: {}
+    browserSync:
+      server:
+        baseDir: 'public'
   # Enable or disable minifying of result js / css files.
   # minify: true
