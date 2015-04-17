@@ -28,5 +28,8 @@ exports.config =
     browserSync:
       server:
         baseDir: 'public'
+    assetsmanager:
+        copyTo:
+          'assets': ['app/images']
   # Enable or disable minifying of result js / css files.
   # minify: true

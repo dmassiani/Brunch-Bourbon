@@ -33,10 +33,11 @@ $color------------: #656D78;
 // @import "../../bower_components/flexboxgrid/dist/flexboxgrid.css";
 
 // composants custom
+@import "components/_variables";
 // @import "components/_buttons";
 // @import "components/_typography";
 // @import "components/_switch";
-// @import "components/_header-nav";
+@import "components/_header-nav";
 
 
 body{
