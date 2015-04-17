@@ -65,7 +65,9 @@ be referenced in the Angular javascript code as 'partials/nav.html'.
 
 * `./scripts/server.sh` to serve using **Brunch**
 
-Then navigate your browser to [http://localhost:3333](http://localhost:3333)
+Then navigate your browser to [http://localhost:3000](http://localhost:3000)
+
+BrowserSync open the page for you
 
 *NOTE:* Occasionally the scripts will not load properly on the initial
 load. If this occurs, refresh the page. Subsequent refresh will render
