@@ -24,7 +24,7 @@ Fix this with add **"main": "app/assets/stylesheets/_base.scss",",** to .bower.j
 
 Prefered method if you have **Brunch** installed run :
 
-`brunch new git clone https://github.com/dmassiani/Brunch-Bourbon.git myapp`
+`brunch new https://github.com/dmassiani/Brunch-Bourbon.git myapp`
 
 You must also install packages using bower. Either
 
